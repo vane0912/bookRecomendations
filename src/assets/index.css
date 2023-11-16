@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&family=Didact+Gothic&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html, #app{
+    height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D8E3D8;
+    overflow-x: hidden;
+}
+h1, h2{
+    font-family: 'Crimson Pro', serif;
+    color: #3F3A37;
+}
+h3, h4, button{
+    font-family: 'Catamaran', sans-serif;
+}
+p{
+    font-family: 'Didact Gothic', sans-serif;
+}
