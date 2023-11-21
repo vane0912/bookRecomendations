@@ -9,7 +9,7 @@
       <img :src="returnedBook.img">
     </div>
     <div class="w-full flex items-center justify-center">
-        <div ref="scroll" class="w-5/6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div ref="scroll" class="w-5/6 grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3">
           <Books
             :filteredSection="this.returnedBook.Section"
             :booksArray="sections"

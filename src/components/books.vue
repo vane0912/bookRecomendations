@@ -1,5 +1,5 @@
 <template>
-    <div ref="turnToCol" class="flex my-6 justify-center h-fit" v-for="book in booksToDisplay" :key="book.id">
+    <div ref="turnToCol" class="flex my-6 justify-center h-fit w-72 sm:w-96" v-for="book in booksToDisplay" :key="book.id">
         <div class="h-fit">
             <img class="w-24" v-bind:src="book.img" alt="book front page">
         </div>

@@ -5,16 +5,15 @@
                 <h3 class="font-medium text-center text-xl lg:text-3xl ">Filter Books by type, Author or Search any Title!</h3>
             </div>     
         </header>
-        <main class="bg-gradient-to-t from-[#d5e4db] via-[#eaf0e9] to-[#e5d7bc] w-full h-full p-5 ">
-            <div class="flex justify-center my-12 w-3/4">
-                <input v-model="Filter" class="bg-[#ECA085] text-[#FEFBF5] py-2 text-xl rounded-md">
-                <select v-model="SectionSelect" class="h-full">
+        <main class="w-full h-full p-5">
+            <div class="flex my-12 justify-evenly flex-col md:flex-row">
+                <input v-model="Filter" class="w-full mb-3 md:mb-0 md:w-3/5 bg-[#FEFBF5] text-[#3F3A37] py-1 text-xl rounded-sm border-solid border-[#C87664] border-2">
+                <select v-model="SectionSelect" class="bg-[#C87664] text-[#FEFBF5] px-5 py-3 cursor-pointer">
                     <option value="">All</option>
                     <option v-for="section in sections" :key="section">{{ section }}</option>
                 </select>
-                <button v-if="show" class="bg-[#3F3A37] text-[#FEFBF5] py-2 px-10 text-xl rounded-md w-1/5">Clear Filter</button>
             </div>
-            <div class="grid grid-cols-3 place-items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
                 <Books
                     filteredSection=""
                     :booksArray="filterBy(this.Filter)"
